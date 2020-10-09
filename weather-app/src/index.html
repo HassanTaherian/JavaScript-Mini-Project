@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather JS</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="app">
+    <div class="card bg-primary border-0 text-white p-4 shadow">
+      <div class="card-body text-center d-flex flex-column justify-content-between">
+        <div class="load-img-container">
+        </div>
+
+        <div class="app-content d-none">
+          <h1 class="w-city mb-4 display-4"></h1>
+          <div class="d-flex justify-content-around align-items-center">
+            <h3 class="w-state text-warning"></h3>
+            <div class="w-state-img">
+            </div>
+            <h4 class="w-temp">
+              <span class="value"></span>
+              <span class="unit">
+                C
+              </span>
+            </h4>
+          </div>
+
+          <ul class="list-group text-dark my-4">
+            <li class="list-group-item">
+              <label>Humidity: </label>
+              <span id="w-humidity"></span>
+              <span class="unit">%</span>
+            </li>
+
+            <li class="list-group-item">
+              <label>Pressure: </label>
+              <span id="w-pressure"></span>
+              <span class="unit">hPa</span>
+            </li>
+
+            <li class="list-group-item">
+              <label>Feels Like: </label>
+              <span id="w-feels-like"></span>
+              <span class="unit">C</span>
+            </li>
+
+            <li class="list-group-item">
+              <label>Wind: </label>
+              <span id="w-wind"></span>
+              <span class="unit">C</span>
+            </li>
+          </ul>
+        </div>
+        <form id="change-location" class="d-none">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <i class="fa fa-search input-group-text bg-dark text-white  border-0"></i>
+            </div>
+            <input type="text" id="city-input" class="form-control" placeholder="City Name">
+
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-dark text-white">
+                Change
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/error.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>

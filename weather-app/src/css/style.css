@@ -1,0 +1,16 @@
+main.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+  main.app .card {
+    width: 500px; }
+
+.bg-primary {
+  background: #262626 !important;
+}
+
+.card-body {
+  min-height: 400px;
+}
